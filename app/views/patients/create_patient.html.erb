@@ -1,0 +1,7 @@
+<%= form_for @pat do |f| %>
+<br>
+ <%= f.label :name, "patient_name"%>
+ <%= f.text_field :name %>
+ <%= f.hidden_field :doctor_id %>
+ <%=f.submit "create" %>
+<% end %>

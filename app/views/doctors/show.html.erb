@@ -1,0 +1,5 @@
+<% @doctor.patients.each do |patient| %>
+	<ul><li><%=link_to patient.name,%><%= link_to "edit", edit_doctor_path %></li></ul>
+
+<%end%>
+<%= link_to "create patient", patient_add_path %>

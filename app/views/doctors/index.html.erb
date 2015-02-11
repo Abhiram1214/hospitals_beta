@@ -1,0 +1,14 @@
+<div class="container">
+<div class="col-sm-2"><%= "list of doctors "%></div><br><br>
+
+<div class="container">
+
+<% @doctor.each do |doctor| %>
+<ul>
+	<div id="doc"><li><%= link_to doctor.name, doctor %></div></li>
+</ul>
+<% end %>
+
+<%= link_to "create doctor", new_doctor_path %>
+</div>
+</div>
